@@ -1,12 +1,9 @@
 import { Box, Heading, Image } from '@chakra-ui/react'
 import React from 'react'
 import Slider from './Slider'
-<<<<<<< HEAD
+
 import data from "../dataslider/data.json"
-=======
-import data from ""
->>>>>>> 1f849ed7fd6981af16e604ace13a649637bbff17
-// import { useSelector } from 'react-redux'
+
 import  { Slideshow } from './Carousel'
 
 
@@ -25,12 +22,12 @@ const Home = () => {
     const eye = slidedata.filter((item) => {
       return item.title.includes("Eye");
     });
-    // console.log(women,"sliderdata")
+
 
 
   return (
     <Box>
-     {/* <Sidemenu></Sidemenu> */}
+     
     <Slideshow></Slideshow>
     <div style={{marginTop:"4.5rem"}}>  <img style={{margin:"auto"}} src={"https://www.beautybebo.com/pub/media/blue_heaven.jpg"}></img></div>
   

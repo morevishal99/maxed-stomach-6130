@@ -2,7 +2,6 @@ import { Box ,Button,Flex,Stack} from '@chakra-ui/react'
 import React from 'react'
 
 import {useSelector,useDispatch} from "react-redux"
-import {getData, getSingleProduct} from "../Redux/products/action"
 import {
   Center,
   useColorModeValue,

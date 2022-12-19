@@ -18,7 +18,6 @@ import {
 import "./navbarBottomSelect.css";
 import React from "react";
 import logo from "./images/beautybebo.png";
-// import flag from "../Assets/flag.jpg";
 import { FiSearch } from "react-icons/fi";
 ;
 

@@ -1,18 +1,10 @@
 import { Box } from '@chakra-ui/react'
 import React from 'react'
-// import {useDispatch, useSelector} from "react-redux"
-// import { getCartData } from '../Redux/products/action'
+
 
 
 const Cartcounter = () => {
-//  const cart = useSelector((store)=>store.productdata.cart)
-// //  console.log(cart,"cartdatafetche")
-//  const dispatch = useDispatch()
-//  React.useEffect(()=>{
-        
-//                 dispatch(getCartData())
-    
-//  },[cart?.length])
+
   return (
     <Box textColor={"white"}
      backgroundColor="black"
@@ -25,7 +17,7 @@ const Cartcounter = () => {
       top="0"
     
       >
-      {/* {cart?.length? cart.length:0} */}
+      
       </Box>
   )
 }

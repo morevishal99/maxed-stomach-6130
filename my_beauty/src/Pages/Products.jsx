@@ -2,7 +2,6 @@ import { Box ,Button,Flex,Stack} from '@chakra-ui/react'
 import React from 'react'
 import styles from "./products.module.css"
 
-// import {useSelector,useDispatch} from "react-redux"
 import {addproductCart, getData, getSingleProduct} from "../Redux/products/action"
 import {
   Center,

@@ -1,7 +1,5 @@
 import React from "react"
-// import Carousel from "react-elastic-carousel";
 
-import { nanoid } from "nanoid";
 import { Box, Heading } from "@chakra-ui/react";
 
 

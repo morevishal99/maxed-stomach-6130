@@ -1,9 +1,6 @@
 import React from 'react';
 import {useState,useEffect} from 'react';
-// import { useDispatch, useSelector } from 'react-redux'
-import { getCartData } from '../Redux/products/action';
 import {Link} from 'react-router-dom'
-// import Popup from 'reactjs-popup'
 
 const Cart = () => {
   const [open, setOpen] = useState(false);
@@ -123,7 +120,7 @@ const [info ,setInfo] = useState({
       
     </div>
     </div>
-    <Popup open={open}  onClose={closeModal}>
+    {/* <Popup open={open}  onClose={closeModal}>
         <div className="modal relative z-0 w-2/3 bg-gray-100 text-red z-1 bg-w00 pl-10 pr-10 pb-10 pt-8 overflow-scroll" >
           <a className="close" onClick={closeModal} href="#" >
            <div className="pl-80 ml-10 text-xl text-black-100">X</div>
@@ -146,7 +143,7 @@ const [info ,setInfo] = useState({
           <div className="border-2 border-slate-300 p-1 mt-6 font-bold text-slate-400 bg-gray-200 mb-10 ">EASY RETURN POLICY</div>
         </div>
        
-      </Popup>
+      </Popup> */}
     </>
   )
 }

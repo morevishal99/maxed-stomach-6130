@@ -1,6 +1,5 @@
 import { Box, Checkbox, CheckboxGroup, VStack, Text ,MenuItemOption,MenuOptionGroup,MenuDivider,Menu,MenuButton,Button,MenuList} from '@chakra-ui/react'
 import React from 'react'
-// import { useDispatch } from 'react-redux'
 import {useSearchParams} from "react-router-dom"
 
 const Filtercomponenets = () => {

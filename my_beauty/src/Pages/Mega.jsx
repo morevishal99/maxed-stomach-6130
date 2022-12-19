@@ -1,11 +1,11 @@
 import React from "react";
-import "./megamenu.css";
+
 import { Link } from "react-router-dom";
 import {background, Box, Button, Heading } from "@chakra-ui/react";
 import {BsCartPlusFill} from "react-icons/bs"
 import Cartcounter from "./Cartcounter";
 
-const Megha = () => {
+const Mega = () => {
   const [hover, setHover] = React.useState(false);
   return (
     <>

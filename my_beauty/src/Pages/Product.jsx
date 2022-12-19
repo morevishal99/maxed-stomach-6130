@@ -20,7 +20,7 @@ import {
 
 import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
 import { MdLocalShipping } from "react-icons/md";
-// import { useDispatch, useSelector } from "react-redux";
+
 import { useParams } from "react-router-dom";
 
 
