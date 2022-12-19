@@ -1,7 +1,11 @@
 import { Box, Heading, Image } from '@chakra-ui/react'
 import React from 'react'
 import Slider from './Slider'
+<<<<<<< HEAD
 import data from "../dataslider/data.json"
+=======
+import data from ""
+>>>>>>> 1f849ed7fd6981af16e604ace13a649637bbff17
 // import { useSelector } from 'react-redux'
 import  { Slideshow } from './Carousel'
 
