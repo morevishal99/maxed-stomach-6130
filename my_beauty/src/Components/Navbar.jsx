@@ -8,58 +8,62 @@ import {
   Heading,
   IconButton,
   Image,
+
   Input,
+
   Select,
   Text,
 
 } from "@chakra-ui/react";
 import "./navbarBottomSelect.css";
 import React from "react";
+import logo from "./images/beautybebo.png";
+// import flag from "../Assets/flag.jpg";
 import { FiSearch } from "react-icons/fi";
+;
 
 
-
-const Navbar = () => {
+export const Navbar = () => {
   const [searchValue, setSearchValue] = useState("");
   const navigate = useNavigate()
 
-  const Search = () => {
-    navigate(`/products/${searchValue}`)
-  }
+const Search=()=>{
+  navigate(`/products/${searchValue}`)
+}
   return (
     <Box bg={"white"}>
-      
-      <Image src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg"  />
       <Flex
         maxWidth={"90%"}
         m={"auto"}
         maxHeight="10rem"
         minH={"5rem"}
         pt="0.5rem"
-
+        // border={"2px solid red"}
         justify="space-between"
       >
-        <Flex
-
-          width={"84%"}
+        <Flex 
+      
+        width={"84%"}
           flexDirection="row"
           alignItems="center"
-
+        
+          // border={"2px solid black"}
           justifyContent="space-around"
+          // margin="auto"
+        >
+          <Image
+            src={logo}
+            cursor="pointer"
+            maxWidth="20rem"
+            maxHeight="15rem"
+            height={"5rem"}
+            alt="Logo"
+            // bgColor="#318FFB"
+          ></Image>
 
-        ><Link to={"/"}> <Image
-        src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png"
-        cursor="pointer"
-        maxWidth="20rem"
-        maxHeight="15rem"
-        height={"5rem"}
-        alt="Logo"
-
-      ></Image></Link>
-         
-
-          <Flex bgColor={"white"} border={"1px solid lightgray"} alignItems="center">
+          <Flex bgColor={"white"}  border={"1px solid lightgray"} alignItems="center">
             <Select placeholder="All Categories" maxWidth="10rem" fontSize={"14px"} border={"none"}>
+            {/* <option value="option1">All Categories</option> */}
               <option value="option1">--Make up</option>
               <option value="option2"> ----Face</option>
               <option value="option3">------Foundation</option>
@@ -80,8 +84,8 @@ const Navbar = () => {
             <Input
               placeholder="Search By Keyword"
               width={"30rem"}
-              border="none"
-              onChange={(e) => setSearchValue(e.target.value)}
+             border="none"
+             onChange={(e)=>setSearchValue(e.target.value)}
             />
             <IconButton
               bg="#dd0285"
@@ -89,23 +93,21 @@ const Navbar = () => {
               color={"white"}
               fontSize="1.5rem"
               borderRadius={"0"}
-              onClick={() => Search()}
+              onClick={()=>Search()}
               icon={<FiSearch />}
             />
           </Flex>
         </Flex>
 
-        <Box  >
-          <Flex marginTop="1rem"
-            gap={"10px"}>
-            <Profile></Profile>
-            <Text paddingTop="10px" fontSize={"15px"}>My Account</Text>
-          </Flex>
-
-        </Box>
+         <Box  >
+         <Flex  marginTop="1rem">
+         <Profile></Profile>
+         <Text  paddingTop="0.4rem">Add Account</Text>
+         </Flex>
+        
+         </Box>
 
       </Flex>
     </Box>
   );
 };
-export default Navbar

@@ -12,9 +12,7 @@ const Signup = () => {
            
   }
   return (
-    <div 
-    //  className={styles.main}
-     >Signup
+    <div  className={styles.main}>Signup
       <div className={styles.container} >
      <h1 className={styles.heading}>PERSONAL INFORMATION</h1>
            <Flex mb={"2rem"} gap="1rem">

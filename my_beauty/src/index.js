@@ -5,8 +5,8 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom'
 // import {Provider} from "react-redux"
 import {ChakraProvider} from "@chakra-ui/react"
-// import axios from "axios"
-// import {store} from "./Redux/store"
+import axios from "axios"
+import {store} from "./Redux/store"
 
 import reportWebVitals from './reportWebVitals';
 
@@ -17,9 +17,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
   <ChakraProvider>
-  {/* <Provider store={store}> */}
+  <Provider store={store}>
   <App />
-    {/* </Provider> */}
+    </Provider>
     </ChakraProvider>
     </BrowserRouter>
 );
